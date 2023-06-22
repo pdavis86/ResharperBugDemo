@@ -1,0 +1,13 @@
+﻿@using MudBlazor
+
+@page "/"
+
+@code
+{
+    void HandleCheckChanged(bool newValue)
+    {
+        Console.WriteLine("New value is: " + newValue);
+    }
+}
+
+<MudCheckBox T="bool" CheckedChanged="HandleCheckChanged" />
